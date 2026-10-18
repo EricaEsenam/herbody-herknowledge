@@ -1,0 +1,967 @@
+/* =====================================
+   HERBODY, HERKNOWLEDGE
+   Main Website Stylesheet
+   ===================================== */
+
+/* 1. General page settings */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+    color: #302A32;
+    line-height: 1.7;
+}
+
+/* 2. Website header */
+
+header {
+    background-color: #54276F;
+    color: #FFFFFF;
+    padding: 20px 8%;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.tagline {
+    font-size: 14px;
+    color: #F7DDE8;
+}
+
+/* 3. Navigation bar */
+
+nav {
+    background-color: #EAE2F4;
+    padding: 15px 8%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+}
+
+nav a {
+    color: #54276F;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #B65C80;
+}
+
+/* 4. Homepage welcome section */
+
+.hero {
+    background-color: #F7DDE8;
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.hero h1 {
+    color: #54276F;
+    font-size: 42px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 750px;
+    margin: 0 auto 25px;
+    font-size: 18px;
+}
+
+/* 5. Buttons */
+
+.button {
+    display: inline-block;
+    background-color: #54276F;
+    color: #FFFFFF;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 6px;
+    margin: 8px 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #B65C80;
+}
+
+/* 6. Welcome information */
+
+.welcome {
+    background-color: #EAE2F4;
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.welcome h2 {
+    color: #54276F;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.welcome p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 17px;
+    line-height: 1.8;
+}
+}
+
+/* 7. Information cards */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 8% 60px;
+    align-items: stretch;
+}
+
+.card {
+    width: 100%;
+    min-width: 0;
+    background-color: #FFFFFF;
+    border: 1px solid #EAE2F4;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(84, 39, 111, 0.08);
+}
+
+.card h3 {
+    color: #54276F;
+    margin-bottom: 12px;
+}
+
+/* 8. General content sections */
+
+.content-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 45px 8%;
+}
+
+.content-section h1,
+.content-section h2,
+.content-section h3 {
+    color: #54276F;
+    margin-bottom: 15px;
+}
+
+.content-section p {
+    margin-bottom: 18px;
+}
+
+/* 9. Footer */
+
+footer {
+    background-color: #54276F;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 25px 8%;
+    font-size: 14px;
+}
+
+footer p {
+    margin-bottom: 8px;
+}
+
+/* 10. Mobile responsiveness */
+
+@media (max-width: 600px) {.cards {
+   grid-template-columns: 1fr;
+}
+
+.card {
+    width: 100%;
+    max-width: none;
+}
+
+    header {
+        padding: 18px 5%;
+    }
+
+    .logo {
+        font-size: 23px;
+    }
+
+    nav {
+        padding: 15px 5%;
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .hero {
+        padding: 55px 6%;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .welcome {
+        padding: 35px 6%;
+    }
+
+    .cards {
+        padding: 20px 6% 40px;
+    }
+
+    .content-section {
+        padding: 35px 6%;
+    }
+}
+body {
+background-color: lavender !important;
+}
+.cards {
+display: grid !important;
+grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+gap: 20px !important;
+width: 100% !important;
+box-sizing: border-box;
+}
+
+.card {
+width: auto !important;
+max-width: none !important;
+box-sizing: border-box;
+}
+
+
+
+/* PCOS page content styling */
+
+.content {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-sizing: border-box;
+    line-height: 1.8;
+    color: #302A32;
+}
+
+.content h2 {
+    color: #54276F;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #F7DDE8;
+}
+
+.content h2:first-child {
+    margin-top: 0;
+}
+
+.content h3 {
+    color: #B65C80;
+    margin-top: 22px;
+    margin-bottom: 10px;
+}
+
+.content p {
+    margin-bottom: 16px;
+}
+
+.content ul,
+.content ol {
+    padding-left: 28px;
+    margin-bottom: 20px;
+}
+
+.content li {
+    margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+    .content {
+        margin: 20px 12px;
+        padding: 20px;
+    }
+}
+
+/* Comparison Table Styling */
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin: 25px 0;
+    border: 2px solid #54276F;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(84, 39, 111, 0.12);
+}
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #FFFFFF;
+    color: #302A32;
+}
+
+.table-container thead {
+    background-color: #54276F;
+    color: #FFFFFF;
+}
+
+.table-container th,
+.table-container td {
+    padding: 16px;
+    text-align: left;
+    vertical-align: top;
+    line-height: 1.7;
+    border: 1px solid #B65C80;
+}
+
+.table-container th {
+    font-size: 16px;
+    font-weight: bold;
+    border-color: #EAE2F4;
+}
+
+.table-container tbody tr:nth-child(even) {
+    background-color: #F7DDE8;
+}
+
+.table-container tbody tr:nth-child(odd) {
+    background-color: #FFFFFF;
+}
+
+.table-container tbody tr:hover {
+    background-color: #EAE2F4;
+}
+
+.table-container td:first-child {
+    font-weight: bold;
+    color: #54276F;
+    min-width: 140px;
+}
+
+.table-container th:first-child {
+    min-width: 140px;
+}
+
+@media (max-width: 768px) {
+    .table-container table {
+        min-width: 700px;
+    }
+
+    .table-container th,
+    .table-container td {
+        padding: 12px;
+    }
+}
+/* Modern PCOS and Endometriosis Comparison Cards */
+
+.comparison-section {
+    margin-top: 35px;
+}
+
+.comparison-cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    margin-top: 25px;
+    align-items: start;
+}
+
+.comparison-card {
+    min-width: 0;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    border: 1px solid #EAE2F4;
+    border-radius: 14px;
+    box-shadow: 0 5px 16px rgba(84, 39, 111, 0.10);
+}
+
+.comparison-card-header {
+    padding: 24px 20px;
+    background-color: #54276F;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.endo-card .comparison-card-header {
+    background-color: #B65C80;
+}
+
+.comparison-card-header h3 {
+    margin: 0 0 8px;
+    color: #FFFFFF;
+    font-size: 24px;
+}
+
+.comparison-card-header p {
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.comparison-card-body {
+    padding: 8px 20px 20px;
+}
+
+.comparison-item {
+    padding: 16px 0;
+    border-bottom: 1px solid #EAE2F4;
+}
+
+.comparison-item:last-child {
+    border-bottom: none;
+}
+
+.comparison-item h4 {
+    margin: 0 0 8px;
+    color: #54276F;
+    font-size: 17px;
+}
+
+.endo-card .comparison-item h4 {
+    color: #B65C80;
+}
+
+.comparison-item p {
+    margin: 0;
+    color: #302A32;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 768px) {
+    .comparison-cards {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .comparison-card-header {
+        padding: 20px 16px;
+    }
+
+    .comparison-card-body {
+        padding: 6px 16px 16px;
+    }
+}
+/* Paired Comparison Cards */
+
+.comparison-topic {
+    margin: 30px 0;
+}
+
+.comparison-topic > h3 {
+    margin: 0 0 15px;
+    padding: 12px 16px;
+    color: #54276F;
+    background-color: #EAE2F4;
+    border-left: 5px solid #54276F;
+    border-radius: 6px;
+    font-size: 20px;
+}
+
+.comparison-pair {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    align-items: stretch;
+}
+
+.comparison-detail {
+    min-width: 0;
+    padding: 22px;
+    border: 1px solid #EAE2F4;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(84, 39, 111, 0.08);
+    box-sizing: border-box;
+}
+
+.pcos-detail {
+    background-color: #FFFFFF;
+    border-top: 5px solid #54276F;
+}
+
+.endo-detail {
+    background-color: #FFFFFF;
+    border-top: 5px solid #B65C80;
+}
+
+.comparison-detail h4 {
+    margin: 0 0 12px;
+    font-size: 18px;
+    color: #54276F;
+}
+
+.endo-detail h4 {
+    color: #B65C80;
+}
+
+.comparison-detail p {
+    margin: 0;
+    color: #302A32;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 768px) {
+    .comparison-pair {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .comparison-detail {
+        padding: 18px;
+    }
+
+    .comparison-topic > h3 {
+        font-size: 18px;
+    }
+}
+
+/* =====================================
+   FAQ FLIP CARD DESIGN
+===================================== */
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    margin-top: 30px;
+}
+
+.faq-card {
+    min-width: 0;
+    min-height: 300px;
+    perspective: 1000px;
+}
+
+.faq-card-button {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    padding: 0;
+    border: none;
+    border-radius: 16px;
+    background: transparent;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+    color: inherit;
+    perspective: 1000px;
+}
+
+.faq-card-button:focus-visible {
+    outline: 3px solid #B65C80;
+    outline-offset: 5px;
+}
+
+.faq-card-inner {
+    display: block;
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.7s ease;
+}
+
+.faq-card.is-flipped .faq-card-inner {
+    transform: rotateY(180deg);
+}
+
+.faq-card-front,
+.faq-card-back {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    inset: 0;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 300px;
+    padding: 28px;
+    border: 1px solid #EAE2F4;
+    border-radius: 16px;
+    box-shadow: 0 5px 16px rgba(84, 39, 111, 0.10);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    overflow-wrap: anywhere;
+}
+
+.faq-card-front {
+    background-color: #EAE2F4;
+    border-top: 5px solid #54276F;
+}
+
+.faq-card-back {
+    background-color: #FFFFFF;
+    border-top: 5px solid #B65C80;
+    transform: rotateY(180deg);
+}
+
+.faq-number {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #B65C80;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.faq-question {
+    display: block;
+    margin-bottom: 22px;
+    color: #54276F;
+    font-size: 23px;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.faq-answer-heading {
+    display: block;
+    margin-bottom: 15px;
+    color: #54276F;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.faq-answer {
+    display: block;
+    color: #302A32;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.faq-hint {
+    display: block;
+    margin-top: 20px;
+    color: #B65C80;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+
+
+/* Mobile Layout: FAQ Cards */
+
+@media (max-width: 768px) {
+    .faq-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+    }
+
+    .faq-card {
+        min-width: 0;
+        min-height: 280px;
+    }
+
+    .faq-card-button {
+        width: 100%;
+        min-height: 280px;
+        height: auto;
+    }
+
+    .faq-card-inner {
+        position: relative;
+        width: 100%;
+        height: auto;
+        min-height: 280px;
+    }
+
+    .faq-card-front,
+    .faq-card-back {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        min-height: 280px;
+        height: 100%;
+        padding: 18px;
+        overflow-wrap: anywhere;
+    }
+
+    .faq-question {
+        font-size: 19px;
+        line-height: 1.4;
+    }
+
+    .faq-answer-heading {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+    .faq-answer {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .faq-hint {
+        font-size: 12px;
+        margin-top: 12px;
+    }
+}
+
+
+/* Respect reduced-motion preferences */
+
+@media (prefers-reduced-motion: reduce) {
+    .faq-card-inner {
+        transition: none;
+    }
+}
+
+/* =================================
+   WEBSITE SEARCH SECTION
+   ================================= */
+
+.search-section {
+    background-color: #F7DDE8;
+    padding: 25px 20px;
+    text-align: center;
+    border-bottom: 2px solid #EAE2F4;
+}
+
+.search-section form {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.search-section label {
+    display: block;
+    color: #54276F;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.search-box input {
+    flex: 1;
+    min-width: 0;
+    padding: 13px 15px;
+    border: 2px solid #54276F;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    color: #302A32;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-box input:focus {
+    border-color: #B65C80;
+    box-shadow: 0 0 0 3px rgba(182, 92, 128, 0.15);
+}
+
+.search-box button {
+    padding: 13px 22px;
+    border: none;
+    border-radius: 8px;
+    background-color: #54276F;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-box button:hover {
+    background-color: #B65C80;
+}
+
+#search-results {
+    max-width: 650px;
+    margin: 15px auto 0;
+    text-align: left;
+}
+
+#search-results:empty {
+    display: none;
+}
+
+/* Mobile layout */
+@media (max-width: 480px) {
+    .search-section {
+        padding: 20px 12px;
+    }
+
+    .search-section label {
+        font-size: 16px;
+    }
+
+    .search-box {
+        gap: 6px;
+    }
+
+    .search-box input {
+        padding: 11px 9px;
+        font-size: 14px;
+    }
+
+    .search-box button {
+        padding: 11px 13px;
+        font-size: 14px;
+    }
+}
+/* Symptom Awareness Checklist */
+
+#symptom-checklist {
+    margin: 35px 0;
+    padding: 28px;
+    background: #F7DDE8;
+    border: 1px solid #E5C4D5;
+    border-radius: 16px;
+    box-shadow: 0 5px 15px rgba(84, 39, 111, 0.10);
+}
+
+#symptom-checklist h2 {
+    color: #54276F;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+#symptom-checklist > p {
+    line-height: 1.7;
+    color: #302A32;
+    margin-bottom: 16px;
+}
+
+#awareness-form fieldset {
+    margin: 22px 0;
+    padding: 20px;
+    background: #FFFFFF;
+    border: 1px solid #D8C5E5;
+    border-radius: 12px;
+}
+
+#awareness-form legend {
+    padding: 8px 14px;
+    background: #54276F;
+    color: #FFFFFF;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+#awareness-form label {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 12px;
+    margin: 7px 0;
+    background: #F8F5FB;
+    border: 1px solid #EAE2F4;
+    border-radius: 8px;
+    line-height: 1.6;
+    cursor: pointer;
+}
+
+#awareness-form label:hover {
+    background: #F0E5F7;
+    border-color: #B65C80;
+}
+
+#awareness-form input[type="checkbox"] {
+    margin-top: 5px;
+    accent-color: #54276F;
+    flex-shrink: 0;
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+}
+
+#awareness-form button {
+    padding: 12px 18px;
+    margin: 6px 8px 6px 0;
+    border: none;
+    border-radius: 8px;
+    background: #54276F;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#awareness-form button:hover {
+    background: #713D8C;
+}
+
+#awareness-form button[type="reset"] {
+    background: #FFFFFF;
+    color: #54276F;
+    border: 1px solid #54276F;
+}
+
+#awareness-form button[type="reset"]:hover {
+    background: #EAE2F4;
+}
+
+#awareness-feedback {
+    margin-top: 18px;
+    line-height: 1.7;
+}
+
+#awareness-feedback p {
+    padding: 16px;
+    background: #FFFFFF;
+    border-left: 5px solid #54276F;
+    border-radius: 8px;
+    color: #302A32;
+}
+
+@media (max-width: 600px) {
+    #symptom-checklist {
+        padding: 16px;
+    }
+
+    #awareness-form fieldset {
+        padding: 14px;
+    }
+
+    #awareness-form button {
+        width: 100%;
+        margin: 6px 0;
+    }
+}
+/* Highlight the Current Website Page */
+
+nav a.active {
+    background-color: #54276F;
+    color: #FFFFFF;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+nav a.active:hover {
+    background-color: #713D8C;
+    color: #FFFFFF;
+}
+
+
+
+
