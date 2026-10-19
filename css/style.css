@@ -13,7 +13,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #FFFFFF;
+    background-color: #EAE2F4;
     color: #302A32;
     line-height: 1.7;
 }
@@ -115,7 +115,7 @@ nav a:hover {
     font-size: 17px;
     line-height: 1.8;
 }
-}
+
 
 /* 7. Information cards */
 
@@ -180,15 +180,7 @@ footer p {
 
 /* 10. Mobile responsiveness */
 
-@media (max-width: 600px) {.cards {
-   grid-template-columns: 1fr;
-}
-
-.card {
-    width: 100%;
-    max-width: none;
-}
-
+@media (max-width: 600px) {
     header {
         padding: 18px 5%;
     }
@@ -223,31 +215,43 @@ footer p {
     }
 
     .cards {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) !important;
+        width: 100%;
+        max-width: 100%;
         padding: 20px 6% 40px;
+        gap: 20px;
+        box-sizing: border-box;
+    }
+
+    .card {
+        width: 100% !important;
+        min-width: 0;
+        max-width: 100%;
+        box-sizing: border-box;
     }
 
     .content-section {
         padding: 35px 6%;
     }
 }
-body {
-background-color: lavender !important;
-}
-.cards {
-display: grid !important;
-grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-gap: 20px !important;
-width: 100% !important;
-box-sizing: border-box;
-}
 
-.card {
-width: auto !important;
-max-width: none !important;
-box-sizing: border-box;
+/* Tablet responsiveness */
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+        padding: 30px 5% 50px;
+    }
+
+    .card {
+        min-width: 0;
+        max-width: 100%;
+        overflow-wrap: break-word;
+        box-sizing: border-box;
+    }
 }
-
-
 
 /* PCOS page content styling */
 
